@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(**/secrets.h)",
+      "Edit(**/secrets.h)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "bash",
+            "command": "grep -qi 'secrets\\.h' && { echo 'Blocked: secrets.h is off-limits to Claude.' >&2; exit 2; } || exit 0"
+          }
+        ]
+      }
+    ]
+  }
+}
