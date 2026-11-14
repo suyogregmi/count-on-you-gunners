@@ -1,11 +1,10 @@
-# ---------------------------------------------------------------
 # Secrets
-# ---------------------------------------------------------------
 secrets.h
 **/secrets.h
 
-# ---------------------------------------------------------------
 # Personal Claude Code files (per-user, may hold sensitive info)
-# ---------------------------------------------------------------
 .claude/settings.local.json
 CLAUDE.local.md
+
+# Local FPGA example reference (apio "blinky" example)
+fpga_example/
