@@ -8,3 +8,9 @@ CLAUDE.local.md
 
 # Local FPGA example reference (apio "blinky" example)
 fpga_example/
+
+# GTKWave files (waveforms)
+*.gtkw
+
+# apio builds (probably have to change this later)
+_build/
