@@ -35,7 +35,7 @@ module spi_recieve (
 
         byte_valid <= 1'b0; // Stays low until condition met 
 
-        if (reset || !cs_n2) begin // Chip select is ACTIVE_LOW
+        if (reset || cs_n2) begin // Chip select is ACTIVE_LOW
             bit_count <= 4'd0;
         end
         else if (bit_count == 4'd8) begin
@@ -49,7 +49,4 @@ module spi_recieve (
         end
 
     end
-
-
-
 endmodule 
