@@ -1,4 +1,4 @@
-// SPI reciever tool for FPGA board to sepearte bytes 
+// SPI reciever tool for FPGA board to separate bytes 
 
 
 module spi_recieve ( 
